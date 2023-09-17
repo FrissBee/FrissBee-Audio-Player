@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrissBee Audio Player</title>
+
+    <!-- Implementation of the FrissBee Audio Player file -->
+    <script src="./js/frissbee-audio-player_1.0.0.js" defer></script>
+    <!-- Implementation of the own JavaScript file -->
+    <script src="./js/main.js" defer></script>
+
+    <style>
+      .container {
+        margin: 40px auto;
+        max-width: 840px;
+      }
+
+      h3 {
+        margin: 50px 0 10px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <h1>FrissBee Audio Player</h1>
+        <h4>Examples of how to embed the <i>FrissBee Audio Player</i> into a web page.</h4>
+        <p><a href="https://audio-player.frissbee.de" target="_blank">For more information and the full documentation click here</a>.</p>
+        <hr />
+
+        <h3>Player default</h3>
+        <frissbee-audio-player class="player-default"></frissbee-audio-player>
+
+        <h3>Player with preset "dark"</h3>
+        <frissbee-audio-player class="player-preset-dark" preset="dark"></frissbee-audio-player>
+
+        <h3>Player default with multiple playlists</h3>
+        <frissbee-audio-player class="player-with-playlists"></frissbee-audio-player>
+
+        <h3>Player default with changed one attribute (bg-color)</h3>
+        <frissbee-audio-player class="player-default-with-changed-one-attribute" bg-color="#47a386"></frissbee-audio-player>
+
+        <h3>Player with changed all attributes</h3>
+        <frissbee-audio-player
+          class="player-with-changed-all-attributes"
+          bg-color="#47a386"
+          color-text-playerbar="#000000"
+          font-band-name="Arial, Helvetica, sans-serif"
+          font-song-title="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"
+          color-slider="#6d56a4"
+          color-play-pause="#f5f5f5"
+          color-buttons="#bababa"
+          height-playlist="100px"
+          on-off-playlist="on"
+          volume-start="75"
+          color-playlist-text-inactive="#f2f2f2"
+          color-playlist-text-active="#303030"
+          color-playlist-bg-inactive="#616161"
+          color-playlist-bg-active="#e8e8e8"
+          shadow-player="off"
+        >
+        </frissbee-audio-player>
+
+        <h3>Player with preset "dark-red" and with a changed attribute (volume-start) with setting by JavaScript</h3>
+        <frissbee-audio-player class="player-with-javascript"></frissbee-audio-player>
+
+        <h3>Player with own presets</h3>
+        <frissbee-audio-player class="player-with-own-presets"></frissbee-audio-player>
+      </div>
+    </main>
+  </body>
+</html>
