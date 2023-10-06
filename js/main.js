@@ -82,9 +82,9 @@ playerWithChangedAllAttributes.playlist = myPlaylist_1;
 // Player with preset "dark-red" and with a changed attribute (volume-start) with setting by JavaScript
 // =======================================
 const playerDarkredWithJavascript = document.querySelector('frissbee-audio-player.player-with-javascript');
-playerDarkredWithJavascript.playlist = myPlaylist_1;
 playerDarkredWithJavascript.setAttribute('preset', 'dark-red');
 playerDarkredWithJavascript.setAttribute('volume-start', '100');
+playerDarkredWithJavascript.playlist = myPlaylist_1;
 
 // =======================================
 // Player with own presets

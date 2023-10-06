@@ -22,8 +22,8 @@ Here is an example to embed the player with the default design into a web page:
     <meta content="width=device-width,initial-scale=1" name="viewport" />
     <title>My Title</title>
 
-    <!-- 1. Step: implement the frissbee-audio-player_1.0.0.js folder -->
-    <script defer="defer" src="./assets/js/frissbee-audio-player_1.0.0.js"></script>
+    <!-- 1. Step: implement the frissbee-audio-player_1.0.2.js folder -->
+    <script src="./assets/js/frissbee-audio-player_1.0.2.js"></script>
   </head>
   <body>
     <!-- 2.Step: Implement the "frissbee-audio-player" HTML tag -->
@@ -32,7 +32,7 @@ Here is an example to embed the player with the default design into a web page:
 
   <script>
     // 3. Step
-    // a) a list of objects in an array containing the details of each audio file
+    // a) A list of objects in an array containing the details of each audio file
     const myPlaylist = [
       {
         bandName: 'Band Name 1',
@@ -49,10 +49,10 @@ Here is an example to embed the player with the default design into a web page:
       // more audio datas...
     ];
 
-    // b) select the frissbee-audio-player HTML element
+    // b) Select the frissbee-audio-player HTML element
     const player = document.querySelector('frissbee-audio-player');
 
-    // c) give the playlist to the selected frissbee-audio-player HTML element with the propery "playlist"
+    // c) Give the playlist to the selected frissbee-audio-player HTML element with the propery "playlist"
     player.playlist = myPlaylist;
   </script>
 </html>
