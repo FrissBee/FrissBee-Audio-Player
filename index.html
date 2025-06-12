@@ -4,46 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FrissBee Audio Player</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
 
     <!-- Implementation of the FrissBee Audio Player file -->
-    <script src="./js/frissbee-audio-player_1.0.3.js"></script>
+    <script src="./js/frissbee-audio-player_1.0.4.js"></script>
 
     <!-- Implementation of the own JavaScript file -->
     <script src="./js/main.js" defer></script>
-
-    <style>
-      .container {
-        margin: 40px auto;
-        max-width: 840px;
-      }
-
-      h3 {
-        margin: 50px 0 10px 0;
-      }
-    </style>
   </head>
 
   <body>
     <main>
-      <div class="container">
-        <h1>FrissBee Audio Player</h1>
-        <h4>Examples of how to embed the <i>FrissBee Audio Player</i> into a web page.</h4>
-        <p><a href="https://audio-player.frissbee.de" target="_blank">For more information and the full documentation click here</a>.</p>
-        <hr />
+      <div class="bg-light border-bottom">
+        <div class="container py-4">
+          <h3>FrissBee Audio Player</h3>
+          <div>
+            Download and documentation on
+            <a href="https://github.com/FrissBee/FrissBee-Audio-Player" target="_blank" rel="noopener noreferrer">GitHub</a><br />
+            Created by <a href="https://frissbee.de/" target="_blank" rel="noopener noreferrer">FrissBee.de</a><br />
+            <a href="https://audio-player.frissbee.de" target="_blank">For more information and the full documentation click here</a>.
+          </div>
+        </div>
+      </div>
 
+      <div class="container py-5">
         <h3>Player default</h3>
         <frissbee-audio-player class="player-default"></frissbee-audio-player>
 
-        <h3>Player with preset "dark"</h3>
+        <h3 class="mt-4">Player with preset "dark"</h3>
         <frissbee-audio-player class="player-preset-dark" preset="dark"></frissbee-audio-player>
 
-        <h3>Player default with multiple playlists</h3>
+        <h3 class="mt-4">Player default with multiple playlists</h3>
         <frissbee-audio-player class="player-with-playlists"></frissbee-audio-player>
 
-        <h3>Player default with changed one attribute (bg-color)</h3>
+        <h3 class="mt-4">Player default with changed one attribute (bg-color)</h3>
         <frissbee-audio-player class="player-default-with-changed-one-attribute" bg-color="#47a386"></frissbee-audio-player>
 
-        <h3>Player with changed all attributes</h3>
+        <h3 class="mt-4">Player with changed all attributes</h3>
         <frissbee-audio-player
           class="player-with-changed-all-attributes"
           bg-color="#47a386"
@@ -64,10 +66,10 @@
         >
         </frissbee-audio-player>
 
-        <h3>Player with preset "red-shadow" and with a changed attribute (volume-start) with setting by JavaScript</h3>
+        <h3 class="mt-4">Player with preset "red-shadow" and with a changed attribute (volume-start) with setting by JavaScript</h3>
         <frissbee-audio-player class="player-with-javascript"></frissbee-audio-player>
 
-        <h3>Player with own presets</h3>
+        <h3 class="mt-4">Player with own presets</h3>
         <frissbee-audio-player class="player-with-own-presets"></frissbee-audio-player>
       </div>
     </main>

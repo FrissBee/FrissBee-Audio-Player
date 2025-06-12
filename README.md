@@ -22,8 +22,8 @@ Here is an example to embed the player with the default design into a web page:
     <meta content="width=device-width,initial-scale=1" name="viewport" />
     <title>My Title</title>
 
-    <!-- 1. Step: implement the frissbee-audio-player_1.0.3.js folder -->
-    <script src="./assets/js/frissbee-audio-player_1.0.3.js"></script>
+    <!-- 1. Step: implement the frissbee-audio-player_1.0.4.js folder -->
+    <script src="./assets/js/frissbee-audio-player_1.0.4.js"></script>
   </head>
   <body>
     <!-- 2.Step: Implement the "frissbee-audio-player" HTML tag -->
